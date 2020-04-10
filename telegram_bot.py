@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import telegram
 
 bot = telegram.Bot(token = '1181502709:AAESeEpf46yrKkyKdIvTH2cUdbtDgySAM-w')
@@ -5,4 +7,4 @@ bot = telegram.Bot(token = '1181502709:AAESeEpf46yrKkyKdIvTH2cUdbtDgySAM-w')
 # for i in bot.getUpdates():
 #     print(i.message)
 
-bot.sendMessage(chat_id=1053225234, text="test.")
+bot.sendMessage(chat_id=1053225234, text="테스트입니당.")
