@@ -20,8 +20,7 @@ def job_function():
         imax = imax.find_parent('div',class_='col-times')
         title = imax.select_one('div.info-movie>a>strong').text.strip()
         bot.sendMessage(chat_id=1053225234, text=title+" IMAX 영화 예매가 열렸습니다")
-    else:
-        bot.sendMessage(chat_id=1053225234, text=" IMAX 영화가 아직 열리지 않았습니다")
+        sched.pause()
 
 
 sched = BlockingScheduler()
